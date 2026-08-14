@@ -1,560 +1,403 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-
     <meta charset="UTF-8">
-
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>La Menganita · Torrelodones</title>
 
     <link rel="stylesheet" href="style.css">
-
 </head>
-
 
 <body>
 
+<header class="topbar">
 
-<!-- =========================
-     BARRA FIJA
-========================= -->
-
-<header class="navbar">
-
-    <a href="#inicio" class="nav-logo">
-
-        <img
-            src="logo.jpeg"
-            alt="La Menganita"
-        >
-
+    <a href="#inicio" class="brand">
+        <img src="logo.png" alt="La Menganita">
         <span>LA MENGANITA</span>
-
     </a>
 
-
     <nav>
-
-        <a href="#carta"
-           data-es="Carta"
-           data-en="Menu">
-            Carta
-        </a>
-
-        <a href="#informacion"
-           data-es="Información"
-           data-en="Information">
-            Información
-        </a>
-
-        <a href="#ubicacion"
-           data-es="Ubicación"
-           data-en="Location">
-            Ubicación
-        </a>
-
+        <a href="#carta" data-es="Carta" data-en="Menu">Carta</a>
+        <a href="#info" data-es="Información" data-en="Information">Información</a>
+        <a href="#ubicacion" data-es="Ubicación" data-en="Location">Ubicación</a>
     </nav>
 
-
-    <button id="language">
-
-        EN
-
-    </button>
+    <button id="lang">EN</button>
 
 </header>
 
 
+<main id="inicio">
 
-<main>
+    <!-- PORTADA -->
 
+    <section class="hero">
 
-<!-- =========================
-     PORTADA
-========================= -->
+        <div class="hero-copy">
 
-<section id="inicio" class="hero">
+            <p class="eyebrow">
+                TORRELODONES · MADRID
+            </p>
 
+            <h1>
+                LA
+                <em>MENGANITA</em>
+            </h1>
 
-    <div class="hero-left">
+            <p class="hero-sub"
+               data-es="Comida, copas y ambiente con carácter."
+               data-en="Food, drinks and an atmosphere with character.">
+                Comida, copas y ambiente con carácter.
+            </p>
 
-        <span class="small-title">
-            TORRELODONES · MADRID
-        </span>
+            <div class="hero-actions">
 
+                <a
+                    class="btn red"
+                    href="#carta"
+                    data-es="VER CARTA"
+                    data-en="VIEW MENU">
+                    VER CARTA
+                </a>
 
-        <h1>
+                <a
+                    class="btn outline"
+                    href="tel:+34673034836">
+                    673 03 48 36
+                </a>
 
-            LA
+            </div>
 
-            <strong>
-                MENGANITA
-            </strong>
-
-        </h1>
-
-
-        <p
-            data-es="Un bar con personalidad, buena comida y una pasión muy clara por las motos."
-            data-en="A bar with personality, good food and a clear passion for motorcycles."
-        >
-            Un bar con personalidad, buena comida y una pasión
-            muy clara por las motos.
-        </p>
-
-
-        <a
-            href="#carta"
-            class="main-button"
-            data-es="VER CARTA"
-            data-en="VIEW MENU"
-        >
-            VER CARTA
-        </a>
-
-    </div>
+        </div>
 
 
+        <div class="hero-mark">
 
-    <div class="hero-right">
-
-        <div class="hero-logo">
+            <div class="metal-ring"></div>
 
             <img
-                src="logo.jpeg"
-                alt="Logo La Menganita"
-            >
+                src="logo.png"
+                alt="Logo de La Menganita">
+
+            <span class="bolt b1"></span>
+            <span class="bolt b2"></span>
+            <span class="bolt b3"></span>
 
         </div>
 
-
-        <div class="hero-line"></div>
-
-
-        <span
-            data-es="COMER · BEBER · DISFRUTAR"
-            data-en="EAT · DRINK · ENJOY"
-        >
-            COMER · BEBER · DISFRUTAR
-        </span>
-
-    </div>
+    </section>
 
 
-</section>
+    <!-- CARTA -->
 
+    <section id="carta" class="menu-section">
 
-
-<!-- =========================
-     INTRO
-========================= -->
-
-<section class="welcome">
-
-
-    <div class="welcome-number">
-        01
-    </div>
-
-
-    <div class="welcome-text">
-
-        <span class="label">
-            LA MENGANITA
-        </span>
-
-
-        <h2
-            data-es="UN SITIO CON<br>MUCHO QUE CONTAR."
-            data-en="A PLACE WITH<br>A STORY TO TELL."
-        >
-            UN SITIO CON<br>
-            MUCHO QUE CONTAR.
-        </h2>
-
-
-        <p
-            data-es="Motos, comida y un ambiente que hace que quieras quedarte. La Menganita es de esos sitios que no necesitan complicarse para tener personalidad."
-            data-en="Motorcycles, food and an atmosphere that makes you want to stay. La Menganita is one of those places that doesn't need to overcomplicate things to have personality."
-        >
-            Motos, comida y un ambiente que hace que quieras
-            quedarte. La Menganita es de esos sitios que no
-            necesitan complicarse para tener personalidad.
-        </p>
-
-    </div>
-
-</section>
-
-
-
-<!-- =========================
-     CARTA
-========================= -->
-
-<section id="carta" class="menu">
-
-
-    <div class="menu-heading">
-
-        <div>
-
-            <span class="number">
-                02
-            </span>
-
-
-            <h2
-                data-es="LA CARTA"
-                data-en="THE MENU"
-            >
-                LA CARTA
-            </h2>
-
-        </div>
-
-
-        <p
-            data-es="PARA PICAR<br>Y COMPARTIR"
-            data-en="TO SHARE<br>AND ENJOY"
-        >
-            PARA PICAR<br>
-            Y COMPARTIR
-        </p>
-
-    </div>
-
-
-
-    <!-- PARA PICAR -->
-
-    <div class="food-section">
-
-
-        <div class="food-title">
-
-            <span>01</span>
+        <div class="section-head">
 
             <div>
+
+                <p class="eyebrow">
+                    LA MENGANITA
+                </p>
+
+                <h2
+                    data-es="LA CARTA"
+                    data-en="THE MENU">
+                    LA CARTA
+                </h2>
+
+            </div>
+
+
+            <div class="exhaust" aria-hidden="true">
+
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </div>
+
+        </div>
+
+
+        <div class="menu-panel">
+
+
+            <!-- PARA PICAR -->
+
+            <div class="menu-title">
 
                 <h3
                     data-es="Para picar"
-                    data-en="To share"
-                >
+                    data-en="To share">
                     Para picar
                 </h3>
 
-                <div class="red-line"></div>
-
-            </div>
-
-        </div>
-
-
-
-        <!-- PLATOS -->
-
-        <div class="dishes">
-
-
-            <article class="dish">
-
-                <div>
-
-                    <h4>
-                        Perritos RS
-                    </h4>
-
-                    <p
-                        data-es="Salchicha vienesa XXL, mix de verde, salsa cheddar, salsa BBQ whisky, patatas paja, cebolla frita y pepinillo."
-                        data-en="XXL Viennese sausage, green mix, cheddar sauce, whiskey BBQ sauce, shoestring potatoes, fried onion and pickles."
-                    >
-                        Salchicha vienesa XXL, mix de verde,
-                        salsa cheddar, salsa BBQ whisky,
-                        patatas paja, cebolla frita y pepinillo.
-                    </p>
-
+                <div class="flame-line">
+                    <i></i>
+                    <i></i>
+                    <i></i>
                 </div>
-
-                <strong>
-                    7,50 €
-                </strong>
-
-            </article>
-
-
-
-            <article class="dish">
-
-                <div>
-
-                    <h4
-                        data-es="Croquetas caseras de jamón o gorgonzola"
-                        data-en="Homemade ham or gorgonzola croquettes"
-                    >
-                        Croquetas caseras de jamón o gorgonzola
-                    </h4>
-
-                </div>
-
-                <strong>
-                    10,90 €
-                </strong>
-
-            </article>
-
-
-
-            <article class="dish">
-
-                <div>
-
-                    <h4
-                        data-es="Crujientes de pollo contado"
-                        data-en="Crispy chicken"
-                    >
-                        Crujientes de pollo contado
-                    </h4>
-
-                    <p
-                        data-es="Salsa Sweet & Chili."
-                        data-en="Sweet & Chili sauce."
-                    >
-                        Salsa Sweet & Chili.
-                    </p>
-
-                </div>
-
-                <strong>
-                    10,90 €
-                </strong>
-
-            </article>
-
-
-
-            <article class="dish">
-
-                <div>
-
-                    <h4
-                        data-es="Gyozas de pollo y verdura"
-                        data-en="Chicken and vegetable gyozas"
-                    >
-                        Gyozas de pollo y verdura
-                    </h4>
-
-                </div>
-
-                <strong>
-                    9,50 €
-                </strong>
-
-            </article>
-
-
-
-            <article class="dish">
-
-                <div>
-
-                    <h4
-                        data-es="Torreznos de Soria"
-                        data-en="Torreznos from Soria"
-                    >
-                        Torreznos de Soria
-                    </h4>
-
-                </div>
-
-                <strong>
-                    9,90 €
-                </strong>
-
-            </article>
-
-
-
-            <article class="dish">
-
-                <div>
-
-                    <h4
-                        data-es="Fingers de queso"
-                        data-en="Cheese fingers"
-                    >
-                        Fingers de queso
-                    </h4>
-
-                    <p
-                        data-es="Con salsa de mostaza y miel."
-                        data-en="With honey mustard sauce."
-                    >
-                        Con salsa de mostaza y miel.
-                    </p>
-
-                </div>
-
-                <strong>
-                    8,50 €
-                </strong>
-
-            </article>
-
-
-
-            <article class="dish">
-
-                <div>
-
-                    <h4>
-                        Gildas
-                    </h4>
-
-                    <p
-                        data-es="1 unidad."
-                        data-en="1 unit."
-                    >
-                        1 unidad.
-                    </p>
-
-                </div>
-
-                <strong>
-                    2,50 €
-                </strong>
-
-            </article>
-
-
-
-            <article class="dish">
-
-                <div>
-
-                    <h4
-                        data-es="Nuestro pincho de tortilla con cebolla"
-                        data-en="Our Spanish omelette with onion"
-                    >
-                        Nuestro pincho de tortilla con cebolla
-                    </h4>
-
-                </div>
-
-                <strong>
-                    3,90 €
-                </strong>
-
-            </article>
-
-
-        </div>
-
-    </div>
-
-
-
-    <!-- ARROCES -->
-
-    <div class="rice-section">
-
-
-        <div class="rice-title">
-
-            <span>02</span>
-
-            <div>
-
-                <h3
-                    data-es="Arroces de la casa"
-                    data-en="House rice dishes"
-                >
-                    Arroces de la casa
-                </h3>
-
-                <div class="red-line"></div>
-
-            </div>
-
-        </div>
-
-
-
-        <div class="rice-content">
-
-
-            <div class="rice-image">
-
-                <img
-                    src="local.jpg"
-                    alt="La Menganita"
-                >
 
             </div>
 
 
-            <div class="rice-info">
-
-                <h4>
-                    Arroces de la casa Miralmonte
-                </h4>
+            <div class="dish-list">
 
 
-                <p
-                    data-es="En paellera y por encargo."
-                    data-en="Served in a paella pan and by order."
-                >
-                    En paellera y por encargo.
-                </p>
+                <article class="dish">
 
+                    <div>
 
-                <div class="rice-types">
+                        <h4>
+                            Perritos RS
+                        </h4>
 
-                    <span>Marisco</span>
+                        <p
+                            data-es="Salchicha vienesa XXL, mix de verde, salsa cheddar, salsa BBQ whisky, patatas paja, cebolla frita y pepinillo."
+                            data-en="XXL Viennese sausage, greens, cheddar sauce, whiskey BBQ sauce, shoestring potatoes, fried onion and pickles.">
+                            Salchicha vienesa XXL, mix de verde,
+                            salsa cheddar, salsa BBQ whisky,
+                            patatas paja, cebolla frita y pepinillo.
+                        </p>
 
-                    <span>Mixta</span>
-
-                    <span>Abanda</span>
-
-                    <span>Señoret</span>
-
-                    <span>Negro</span>
-
-                    <span>Pollo y verduras</span>
-
-                    <span>Verduras</span>
-
-                    <span>Fideuá de marisco</span>
-
-                    <span>Hongos con jamón</span>
-
-                    <span>Meloso de hongos</span>
-
-                    <span>Meloso de bogavante</span>
-
-                    <span>Meloso de marisco</span>
-
-                </div>
-
-
-                <div class="rice-price">
-
-                    <span>
-                        Desde
-                    </span>
+                    </div>
 
                     <strong>
-                        14 €
+                        7,50 €
                     </strong>
 
-                    <small>
-                        / persona
-                    </small>
+                </article>
+
+
+                <article class="dish">
+
+                    <div>
+
+                        <h4
+                            data-es="Croquetas caseras de jamón o gorgonzola"
+                            data-en="Homemade ham or gorgonzola croquettes">
+                            Croquetas caseras de jamón o gorgonzola
+                        </h4>
+
+                    </div>
+
+                    <strong>
+                        10,90 €
+                    </strong>
+
+                </article>
+
+
+                <article class="dish">
+
+                    <div>
+
+                        <h4
+                            data-es="Crujientes de pollo contado"
+                            data-en="Crispy chicken">
+                            Crujientes de pollo contado
+                        </h4>
+
+                        <p
+                            data-es="Con salsa Sweet & Chili."
+                            data-en="With Sweet & Chili sauce.">
+                            Con salsa Sweet & Chili.
+                        </p>
+
+                    </div>
+
+                    <strong>
+                        10,90 €
+                    </strong>
+
+                </article>
+
+
+                <article class="dish">
+
+                    <div>
+
+                        <h4
+                            data-es="Gyozas de pollo y verdura"
+                            data-en="Chicken and vegetable gyozas">
+                            Gyozas de pollo y verdura
+                        </h4>
+
+                    </div>
+
+                    <strong>
+                        9,50 €
+                    </strong>
+
+                </article>
+
+
+                <article class="dish">
+
+                    <div>
+
+                        <h4
+                            data-es="Torreznos de Soria"
+                            data-en="Torreznos from Soria">
+                            Torreznos de Soria
+                        </h4>
+
+                    </div>
+
+                    <strong>
+                        9,90 €
+                    </strong>
+
+                </article>
+
+
+                <article class="dish">
+
+                    <div>
+
+                        <h4
+                            data-es="Fingers de queso"
+                            data-en="Cheese fingers">
+                            Fingers de queso
+                        </h4>
+
+                        <p
+                            data-es="Con salsa de mostaza y miel."
+                            data-en="With honey mustard sauce.">
+                            Con salsa de mostaza y miel.
+                        </p>
+
+                    </div>
+
+                    <strong>
+                        8,50 €
+                    </strong>
+
+                </article>
+
+
+                <article class="dish">
+
+                    <div>
+
+                        <h4>
+                            Gildas
+                        </h4>
+
+                        <p
+                            data-es="1 unidad."
+                            data-en="1 unit.">
+                            1 unidad.
+                        </p>
+
+                    </div>
+
+                    <strong>
+                        2,50 €
+                    </strong>
+
+                </article>
+
+
+                <article class="dish">
+
+                    <div>
+
+                        <h4
+                            data-es="Nuestro pincho de tortilla con cebolla"
+                            data-en="Our Spanish omelette with onion">
+                            Nuestro pincho de tortilla con cebolla
+                        </h4>
+
+                    </div>
+
+                    <strong>
+                        3,90 €
+                    </strong>
+
+                </article>
+
+            </div>
+
+
+            <!-- ARROCES -->
+
+            <div class="rice-block">
+
+                <div class="menu-title">
+
+                    <h3
+                        data-es="Arroces de la casa"
+                        data-en="House rice dishes">
+                        Arroces de la casa
+                    </h3>
+
+                    <div class="flame-line">
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                    </div>
+
+                </div>
+
+
+                <div class="rice-content">
+
+                    <div>
+
+                        <h4>
+                            Miralmonte
+                        </h4>
+
+                        <p
+                            data-es="En paellera y por encargo."
+                            data-en="Served in a paella pan and by order.">
+                            En paellera y por encargo.
+                        </p>
+
+
+                        <div class="rice-tags">
+
+                            <span>Marisco</span>
+                            <span>Mixta</span>
+                            <span>Abanda</span>
+                            <span>Señoret</span>
+                            <span>Negro</span>
+                            <span>Pollo y verduras</span>
+                            <span>Verduras</span>
+                            <span>Fideuá de marisco</span>
+                            <span>Hongos con jamón</span>
+                            <span>Meloso de hongos</span>
+                            <span>Meloso de bogavante</span>
+                            <span>Meloso de marisco</span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="rice-price">
+
+                        <small
+                            data-es="DESDE"
+                            data-en="FROM">
+                            DESDE
+                        </small>
+
+                        <b>
+                            14 €
+                        </b>
+
+                        <small
+                            data-es="POR PERSONA"
+                            data-en="PER PERSON">
+                            POR PERSONA
+                        </small>
+
+                    </div>
 
                 </div>
 
@@ -562,350 +405,175 @@
 
         </div>
 
-    </div>
+    </section>
 
 
+    <!-- INFORMACIÓN -->
 
-    <div class="menu-note">
+    <section id="info" class="info-section">
 
-        <span>
-            LA MENGANITA
-        </span>
+        <div class="info-heading">
 
-        <span
-            data-es="CARTA SUJETA A DISPONIBILIDAD"
-            data-en="MENU SUBJECT TO AVAILABILITY"
-        >
-            CARTA SUJETA A DISPONIBILIDAD
-        </span>
+            <h2
+                data-es="RESERVAS · INSTAGRAM · DIRECCIÓN"
+                data-en="BOOKING · INSTAGRAM · ADDRESS">
+                RESERVAS · INSTAGRAM · DIRECCIÓN
+            </h2>
 
-    </div>
-
-</section>
-
-
-
-<!-- =========================
-     IMAGEN / MOTO
-========================= -->
-
-<section class="motor">
-
-
-    <div class="motor-image">
-
-        <img
-            src="moto.jpg"
-            alt="Motos en La Menganita"
-        >
-
-    </div>
-
-
-    <div class="motor-text">
-
-        <span>
-            03
-        </span>
-
-
-        <h2
-            data-es="MOTOS<br>CON HISTORIA."
-            data-en="MOTORCYCLES<br>WITH HISTORY."
-        >
-            MOTOS<br>
-            CON HISTORIA.
-        </h2>
-
-
-        <p
-            data-es="La pasión por las motos forma parte de La Menganita. Sin exagerarla. Simplemente está ahí, formando parte del ambiente."
-            data-en="The passion for motorcycles is part of La Menganita. No need to exaggerate it. It's simply there, part of the atmosphere."
-        >
-            La pasión por las motos forma parte de La Menganita.
-            Sin exagerarla. Simplemente está ahí, formando
-            parte del ambiente.
-        </p>
-
-    </div>
-
-</section>
-
-
-
-<!-- =========================
-     INFORMACIÓN
-========================= -->
-
-<section id="informacion" class="information">
-
-
-    <div class="information-heading">
-
-        <span class="number">
-            04
-        </span>
-
-
-        <h2
-            data-es="INFORMACIÓN"
-            data-en="INFORMATION"
-        >
-            INFORMACIÓN
-        </h2>
-
-    </div>
-
-
-
-    <div class="info-grid">
-
-
-        <!-- HORARIO -->
-
-        <div class="info-card">
-
-            <span class="info-icon">
-                HORARIO
-            </span>
-
-
-            <h3
-                data-es="Ven a vernos"
-                data-en="Come and see us"
-            >
-                Ven a vernos
-            </h3>
-
-
-            <p>
-                MARTES — JUEVES<br>
-                19:00 — 02:00
-            </p>
-
-            <p>
-                VIERNES — SÁBADO<br>
-                19:00 — 03:00
-            </p>
-
-            <p>
-                DOMINGO<br>
-                19:00 — 02:00
-            </p>
+            <div class="pipe-decoration"></div>
 
         </div>
 
 
-
-        <!-- CONTACTO -->
-
-        <div class="info-card">
-
-            <span class="info-icon">
-                CONTACTO
-            </span>
-
-
-            <h3
-                data-es="Hablemos"
-                data-en="Get in touch"
-            >
-                Hablemos
-            </h3>
+        <div class="info-grid">
 
 
             <a
-                href="tel:+34673034836"
-                class="big-link"
-            >
-                673 03 48 36
+                class="info-card"
+                href="tel:+34673034836">
+
+                <span>
+                    RESERVAS
+                </span>
+
+                <strong>
+                    673 03 48 36
+                </strong>
+
+                <small
+                    data-es="Llamar para reservar →"
+                    data-en="Call to book →">
+                    Llamar para reservar →
+                </small>
+
             </a>
 
 
             <a
+                class="info-card"
                 href="https://www.instagram.com/lamenganitabar/"
-                target="_blank"
-                class="big-link"
-            >
-                @lamenganitabar
+                target="_blank">
+
+                <span>
+                    INSTAGRAM
+                </span>
+
+                <strong>
+                    @lamenganitabar
+                </strong>
+
+                <small
+                    data-es="Toda la actualidad →"
+                    data-en="Latest updates →">
+                    Toda la actualidad →
+                </small>
+
             </a>
+
+
+            <div class="info-card">
+
+                <span>
+                    DÓNDE ESTAMOS
+                </span>
+
+                <strong>
+                    Hermanos Velasco López, 10
+                </strong>
+
+                <small>
+                    28250 · Torrelodones · Madrid
+                </small>
+
+            </div>
+
 
         </div>
 
+    </section>
 
 
-        <!-- LOCAL -->
+    <!-- UBICACIÓN -->
 
-        <div class="info-card">
-
-            <span class="info-icon">
-                DIRECCIÓN
-            </span>
+    <section id="ubicacion" class="location">
 
 
-            <h3>
-                Torrelodones
-            </h3>
+        <div class="location-text">
 
-
-            <p>
-                C. Hermanos Velasco López, 10<br>
-                28250 Madrid
+            <p class="eyebrow">
+                UBICACIÓN
             </p>
+
+            <h2
+                data-es="NOS VEMOS<br>EN TORRELODONES."
+                data-en="SEE YOU<br>IN TORRELODONES.">
+
+                NOS VEMOS<br>
+                EN TORRELODONES.
+
+            </h2>
 
 
             <a
-                href="https://www.google.com/maps/search/?api=1&query=Calle+Hermanos+Velasco+Lopez+10+Torrelodones+Madrid"
+                class="btn light"
                 target="_blank"
-                class="small-button"
-                data-es="ABRIR MAPA →"
-                data-en="OPEN MAP →"
-            >
-                ABRIR MAPA →
+                href="https://www.google.com/maps/search/?api=1&query=Calle+Hermanos+Velasco+Lopez+10+Torrelodones+Madrid"
+                data-es="ABRIR EN MAPS →"
+                data-en="OPEN IN MAPS →">
+
+                ABRIR EN MAPS →
+
             </a>
 
         </div>
 
 
-    </div>
+        <div class="location-art">
 
-</section>
-
-
-
-<!-- =========================
-     UBICACIÓN
-========================= -->
-
-<section id="ubicacion" class="location">
+            <div class="road"></div>
 
 
-    <div class="location-copy">
+            <div class="exhaust-large">
 
-        <span>
-            05
-        </span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
 
-
-        <h2
-            data-es="NOS VEMOS<br>EN TORRELODONES."
-            data-en="SEE YOU<br>IN TORRELODONES."
-        >
-            NOS VEMOS<br>
-            EN TORRELODONES.
-        </h2>
+            </div>
 
 
-        <p
-            data-es="Guarda la dirección, súbete a la moto y nos vemos."
-            data-en="Save the address, get on your bike and see you there."
-        >
-            Guarda la dirección, súbete a la moto
-            y nos vemos.
-        </p>
-
-
-        <a
-            href="https://www.google.com/maps/search/?api=1&query=Calle+Hermanos+Velasco+Lopez+10+Torrelodones+Madrid"
-            target="_blank"
-            class="main-button"
-            data-es="CÓMO LLEGAR"
-            data-en="GET DIRECTIONS"
-        >
-            CÓMO LLEGAR
-        </a>
-
-    </div>
-
-
-    <div class="location-art">
-
-        <div class="road">
-
-            <div class="road-line"></div>
+            <div class="road-text">
+                TORRELODONES / MENGANITA
+            </div>
 
         </div>
 
-
-        <div class="static-bike">
-            🏍
-        </div>
-
-
-        <div class="location-sign">
-
-            <strong>
-                LA
-            </strong>
-
-            <span>
-                MENGANITA
-            </span>
-
-            <small>
-                TORRELODONES
-            </small>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- =========================
-     FINAL
-========================= -->
-
-<section class="closing">
-
-
-    <img
-        src="logo.jpeg"
-        alt="La Menganita"
-    >
-
-
-    <h2>
-        LA MENGANITA
-    </h2>
-
-
-    <p
-        data-es="TORRELODONES · MADRID"
-        data-en="TORRELODONES · MADRID"
-    >
-        TORRELODONES · MADRID
-    </p>
-
-</section>
-
-
+    </section>
 
 </main>
 
 
-
 <footer>
+
+    <img
+        src="logo.png"
+        alt="La Menganita">
 
     <span>
         © 2026 LA MENGANITA
     </span>
 
-    <span
-        data-es="COMER · BEBER · DISFRUTAR"
-        data-en="EAT · DRINK · ENJOY"
-    >
-        COMER · BEBER · DISFRUTAR
-    </span>
+    <a
+        href="https://www.instagram.com/lamenganitabar/"
+        target="_blank">
+        @lamenganitabar
+    </a>
 
 </footer>
-
 
 
 <script src="script.js"></script>
 
 </body>
-
 </html>
