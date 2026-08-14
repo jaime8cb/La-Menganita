@@ -1,44 +1,23 @@
-const languageButton = document.getElementById("language");
+const button = document.getElementById("lang");
 
-let language = "es";
+let lang = "es";
 
+button.addEventListener("click", () => {
 
-languageButton.addEventListener("click", function () {
+    lang = lang === "es" ? "en" : "es";
 
-    const elements =
-        document.querySelectorAll("[data-es][data-en]");
-
-
-    elements.forEach(function (element) {
-
-        if (language === "es") {
+    document
+        .querySelectorAll("[data-es][data-en]")
+        .forEach(element => {
 
             element.innerHTML =
-                element.getAttribute("data-en");
+                element.getAttribute(`data-${lang}`);
 
-        } else {
+        });
 
-            element.innerHTML =
-                element.getAttribute("data-es");
+    button.textContent =
+        lang === "es" ? "EN" : "ES";
 
-        }
-
-    });
-
-
-    language =
-        language === "es"
-            ? "en"
-            : "es";
-
-
-    languageButton.textContent =
-        language === "es"
-            ? "EN"
-            : "ES";
-
-
-    document.documentElement.lang =
-        language;
+    document.documentElement.lang = lang;
 
 });
